@@ -5,7 +5,8 @@
 </head>
 <body>
 <h2>Dashboard</h2>
-<h5>Hurray! you are logged in.</h5>
+{{!-- <h5>Hurray! you are logged in.</h5> --}}
 {{#isEmpty profile}} <h5>Login</h5> {{else}} <h5>{{profile.email}}</h5>{{/isEmpty}}
+<a href="/signin">Login</a>
 </body>
 </html>

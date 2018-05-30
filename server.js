@@ -5,6 +5,7 @@
     var bodyParser = require('body-parser')
     var env        = require('dotenv').load()
     var exphbs     = require('express-handlebars')
+    var helpers = require('handlebars-helpers')();
 
 
 

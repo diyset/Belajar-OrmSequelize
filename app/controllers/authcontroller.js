@@ -13,9 +13,16 @@ exports.signin = function(req,res){
 
 }
 
-exports.dashboard = function(req,res){
+exports.menu = function(req,res){
+  let profile = req.user;
+  console.log('Menu : ',profile)
+  res.render('menu',{'profile': profile});
+}
 
-	res.render('dashboard'); 
+exports.dashboard = function(req,res){
+  let profile = req.user;
+  console.log(profile)
+	res.render('dashboard',{'profile':profile}); 
 
 }
 
